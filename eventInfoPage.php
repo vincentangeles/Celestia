@@ -23,9 +23,9 @@ $eventResult = executeQuery($eventQuery);
     <meta property="og:title" content="<?php echo htmlspecialchars($events['title']); ?>">
     <meta property="og:type" content="website">
     <meta property="og:url"
-        content="https://celestia-events.000webhostapp.com/eventInfoPage.php?eventID=<?php echo $events['eventID']; ?>">
+        content="https://vincentangeles.github.io/eventInfoPage.php?eventID=<?php echo $events['eventID']; ?>">
     <meta property="og:image"
-        content="https://celestia-events.000webhostapp.com/assets/img/<?php echo $events['bannerImage']; ?>">
+        content="https://vincentangeles.github.io/assets/img/<?php echo $events['bannerImage']; ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($events['description']); ?>">
     <meta property="og:site_name" content="Celestia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
