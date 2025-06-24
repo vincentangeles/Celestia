@@ -23,7 +23,7 @@ $eventResult = executeQuery($eventQuery);
     <meta property="og:title" content="<?php echo htmlspecialchars($events['title']); ?>">
     <meta property="og:type" content="website">
     <meta property="og:url"
-        content="https://github.com/vincentangeles/Celestia.git/guest/eventInfo.php?eventId=<?php echo $events['eventId']; ?>">
+        content="https://github.com/vincentangeles/Celestia.git/guest/eventInfoPage.php?eventId=<?php echo $events['eventId']; ?>">
     <meta property="og:image"
         content="https://github.com/vincentangeles/Celestia.git/assets/img/<?php echo $events['bannerImage']; ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($events['description']); ?>">
