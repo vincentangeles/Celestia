@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Fonts */
+    --primaryFont: 'Poppins', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+
+    /* Colors */
+    --bg-color: linear-gradient(to right, rgba(233, 30, 99, 1), rgba(255, 225, 235, 0.98));
+    --bg-color2: linear-gradient(to top left, rgba(255, 225, 235, 0.98), rgba(233, 30, 99, 1));
+    --primary-color: #E91E63;
+    --secondary-color: rgba(255, 225, 235, 0.98);
+    --tertiary-color: rgba(236, 84, 136, 1);
+    --text-color-light: #FFFFFF;
+    --text-color-dark: #1A1A1A;
+    --text-color-pinkgray: rgba(160, 124, 136, 0.98);
+    --text-color-gray: rgba(148, 148, 148, 1);
+
+    /* Font Sizes */
+    --title: clamp(2.5rem, 6vw, 6rem);
+    --heading: clamp(1.8rem, 4vw, 2.5rem);
+    --subheading: clamp(1.2rem, 3vw, 1.5rem);
+    --h5: clamp(1.1rem, 2.5vw, 1.25rem);
+    --lead: clamp(0.95rem, 2vw, 1rem);
+    --h6: clamp(0.75rem, 1.5vw, 0.88rem);
+
+    /* Hover */
+    --btn-hover1: #D61C7A;
+    --btn-hover2: #c6a1b3;
+    --btn-hover3: rgba(148, 148, 148, 1);
+}
+
+    .form-control:focus,
+    .form-control {
+        border-color: var(--primary-color);
+        box-shadow: none;
+    }
+
+    .btn-custom {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: white;
+    }
+
+    .btn-custom:hover {
+        background-color: var(--tertiary-color);
+        border-color: var(--tertiary-color);
+    }
+
+    .custom-link {
+        color: var(--primary-color);
+    }
+
+    .custom-link:hover {
+        color: var(--tertiary-color);
+        text-decoration: underline;
+    }

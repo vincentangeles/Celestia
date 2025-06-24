@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root {
+  /* Fonts */
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "Roboto", sans-serif;
+
+  /* Colors */
+  --bg-color: linear-gradient(
+    to right,
+    rgba(233, 30, 99, 1),
+    rgba(255, 225, 235, 0.98)
+  );
+  --bg-color2: linear-gradient(
+    to top left,
+    rgba(255, 225, 235, 0.98),
+    rgba(233, 30, 99, 1)
+  );
+  --primary-color: #e91e63;
+  --secondary-color: rgba(255, 225, 235, 0.98);
+  --tertiary-color: rgba(236, 84, 136, 1);
+  --text-color-light: #ffffff;
+  --text-color-dark: #1a1a1a;
+  --text-color-pinkgray: rgba(160, 124, 136, 0.98);
+  --text-color-gray: rgba(148, 148, 148, 1);
+
+  /* Font Sizes */
+  --title: clamp(2.5rem, 6vw, 6rem);
+  --heading: clamp(1.8rem, 4vw, 2.5rem);
+  --h2: clamp(1.4rem, 2.2vw, 2rem);
+  --subheading: clamp(1.2rem, 3vw, 1.5rem);
+  --h5: clamp(1.1rem, 2.5vw, 1.25rem);
+  --lead: clamp(0.95rem, 2vw, 1rem);
+  --h6: clamp(0.75rem, 1.5vw, 0.88rem);
+
+  /* Hover */
+  --btn-hover1: #d61c7a;
+  --btn-hover2: #c6a1b3;
+  --btn-hover3: rgba(148, 148, 148, 1);
+}
+
+/* KAYE-EVENT PAGE INFO */
+body {
+  background: var(--tertiary-color);
+  height: 100%;
+  color: var(--text-color-light);
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--tertiary-color) !important;
+  border-bottom: 5px solid #ffe1eb;
+  font-family: var(--primaryFont);
+}
+
+.navbar-brand {
+  color: var(--text-color-light);
+  font-size: var(--h2);
+}
+
+.nav-link {
+  color: var(--text-color-light) !important;
+  font-size: var(--h5);
+}
+
+/* MAIN CONTAINER CONTENT */
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* EVENT HEADER */
+.event-title {
+  font-size: var(--heading);
+  font-family: var(--primaryFont);
+  font-weight: 900;
+  padding-top: 2rem;
+}
+
+.event-location {
+  font-size: var(--h5);
+  font-family: var(--secondaryFont);
+}
+
+.btn-attend-event {
+  width: 100%;
+  background-color: white;
+  color: var(--text-color-dark);
+  border: 2px solid black;
+  border-radius: 1.25rem;
+  padding: 0.4rem;
+
+  font-size: var(--h6);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-attend-event:hover {
+  background-color: black;
+  color: var(--text-color-light);
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* LINE DIVIDER */
+.line-break {
+  width: 100%;
+  border: none;
+  opacity: 0.8;
+  height: 3px;
+  background-color: white;
+  margin: 2rem 0;
+}
+
+/* SECTION CONTAINER */
+.section-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section-header {
+  font-size: var(--subheading);
+  font-family: var(--primaryFont);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.section-content-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.about-event-description {
+  text-align: justify;
+  font-family: var(--secondaryFont);
+  padding-bottom: 1.5rem;
+}
+
+.seat-plan-image {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 2px solid var(--text-color-dark);
+}
+
+/* LEAFLET MAP */
+.leaflet-map {
+  height: 400px;
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 2px solid var(--text-color-dark);
+}
+
+/* BUY TICKET BUTTONS */
+.ticketing-outlet {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 2px solid var(--text-color-dark);
+}
+
+.ticketing-outlet-description,
+.ticketing-outlet-instruction,
+.event-info-qr-code-title,
+.event-info-qr-code-description {
+  text-align: justify;
+  font-family: var(--secondaryFont);
+}
+
+.buy-tickets-available {
+  width: 100%;
+  background-color: white;
+  color: var(--text-color-dark);
+  border: 2px solid black;
+  border-radius: 1.25rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+
+  font-size: var(--h6);
+  font-weight: 600;
+  text-decoration: none;
+
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.buy-tickets-available:hover {
+  background-color: black;
+  color: var(--text-color-light);
+  transform: translateY(-4px) scale(1.05);
+}
+
+.buy-tickets-unavailable {
+  width: 100%;
+  background-color: #d6d6d6;
+  color: #6c757d;
+  border: 2px solid rgb(82, 82, 82);
+  border-radius: 1.25rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+
+  font-size: var(--h6);
+  font-weight: 600;
+  text-decoration: none;
+
+  display: inline-block;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* QR Code */
+.event-info-qr-code {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 2px solid var(--text-color-dark);
+}
+
+.event-info-qr-code-title {
+  font-weight: bold;
+  color: var(--tertiary-color);
+  animation: pinkToWhitePulse 2s infinite ease-in-out;
+}
+
+@keyframes pinkToWhitePulse {
+  0%,
+  100% {
+    color: var(--tertiary-color);
+    text-shadow: none;
+  }
+  50% {
+    color: white;
+    text-shadow: 0 0 10px white;
+  }
+}
+
+/* FOR SMALL SCREEN SIZE RESPONSIVENESS */
+@media (max-width: 600px) {
+  .main-container {
+    width: 90%;
+    padding: 1rem 0;
+  }
+
+  .event-title {
+    padding-top: 1rem;
+  }
+
+  .section-container {
+    width: 90%;
+  }
+
+  .section-content-container {
+    width: 100%;
+  }
+}
